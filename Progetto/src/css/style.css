@@ -11,18 +11,30 @@ header .div-hea{
 
 .span-h-f {
   color: white;
-  margin-left: 3%;
+  margin-left: 2%;
   font-size: 80%;
 }
 
+/*
 .hero {
   background-color: #e4edf6;
 }
+*/
 
 .hero-text {
   padding: 20px 40px;
 }
 
+.content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.btn-primary {
+  height: 37px;
+  margin-top: 2%;
+}
+/*
 #imgH1 {
   height: 37px;
   width: 40px;
@@ -37,58 +49,49 @@ header .div-hea{
   border-radius: 10px;
   margin-top: 2%;
 }
-
-.content {
-  margin-left: 3%;
-  margin-right: 3%;
-
-}
-
+*/
 .article-image {
-  height: 270px;
+  height: 100%;
   width: 100%;
 }
 
 .tech {
-  display: block;
   border-radius: 10px;
   width: 13%;
   height: 13%;
-  margin-top: 8px;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .span-like {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  cursor: pointer;
-  background-color: #ffffff;
-  user-select: none;
-}
-
-
-.articolo {
-  width: 27%;
   display: inline-block;
-  padding: 25px;
-  vertical-align: top;
-  min-width: 300px;
+  border: 1px solid #B1B1B1;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 3%;
 }
 
-#cookie {
+.green-like {
+  border: 1px solid green;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+.cookie {
   position: fixed;
   bottom: 0;
   background-color: #223a48;
   width: 100%;
-  vertical-align: middle;
   padding: 10px;
-
-
+  z-index: 90
 }
 
 #divFot {
   margin-top: 1%;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-bottom: 40px;
   font-size: 80%;
   padding: 10px;

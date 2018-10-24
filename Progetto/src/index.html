@@ -1,85 +1,106 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetto Front End</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetto Front End</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+</head>
+<body>
 
-    <div id="cookie">
-        <span class="span-h-f">This is a cookie policy click <a id="hereCookie" href="helloWorld.html"  target= "_blank">here</a> to close it</span>
-    </div>
+  <div class="cookie">
+    <span class="span-h-f">This is a cookie policy click <a id="hereCookie" href="helloWorld.html"  target= "_blank">here</a> to close it</span>
+  </div>
 
-    <header>
-      <div class="div-hea">
+  <header>
+    <div class="div-hea">
       <span class="span-h-f"> Progetto </span>
     </div>
-    </header>
+  </header>
 
-    <div class="hero">
-      <div class="hero-text">
-        <h1>Hello, world!</h1>
-        <article>
-           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-           nisi ut aliquid ex ea commodi consequatur.
+  <section class="jumbotron">
+    <div class="hero-text">
+      <h1>Hello, world!</h1>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+        nisi ut aliquid ex ea commodi consequatur.<br>
+      </span>
+
+      <a href="https://github.com/" type="button" class="btn btn-primary">
+        <svg fill="white" height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+          0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+          1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+          0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09
+          2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65
+          3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+
+    <a href="helloWorld.html" type="button" class="btn btn-primary">Slides >></a>
+
+
+    <!--    <a href="https://github.com/"> <img id="imgH1" class="imgHero" alt="Not Found" src="image/git.jpg"></a> -->
+    <!--    <a href="helloWorld.html"> <img id="imgH2"class="imgHero" alt="Not Found" src="image/slides.jpg"></a> -->
+
+  </div>
+</section>
+
+<section class="content">
+  <div class="row">
+    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <h3>Article Title 1</h3>
+      <img class="article-image" alt="Not Found" src="image/articolo1.jpg" >
+      <img class="tech" alt="Not Found" src="image/tech.jpg">
+      <p>Donec id elit non mi porta gravida at
+        eget metus. Lacinia bibendum nulla
+        sed consectetur. Vivamus sagittis lacus
+        vel augue laoreet rutrum. </p>
+        <span class="span-like" id="like1">like</span>
+
+      </article>
+
+
+      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <h3>Article Title 2</h3>
+        <img class="article-image" alt="Not Found" src="image/articolo2.jpg">
+        <img class="tech" alt="Not Found" src="image/tech.jpg">
+        <p>Donec id elit non mi porta gravida at
+          eget metus. Lacinia bibendum nulla
+          sed consectetur. Vivamus sagittis lacus
+          vel augue laoreet rutrum.</p>
+          <span class="span-like" id="like2">like</span>
+
         </article>
 
-        <a href="https://github.com/"> <img id="imgH1" class="imgHero" alt="Not Found" src="image/git.jpg"></a>
-        <a href="helloWorld.html"> <img id="imgH2"class="imgHero" alt="Not Found" src="image/slides.jpg"></a>
-        </div>
-      </div>
-
-        <section class="content">
-
-          <div class="articolo">
-            <h3>Article Title 1</h3>
-            <img class="article-image" alt="Not Found" src="image/articolo1.jpg">
-              <img class="tech" alt="Not Found" src="image/tech.jpg">
-              <p>Donec id elit non mi porta gravida at
-              eget metus. Lacinia bibendum nulla
-              sed consectetur. Vivamus sagittis lacus
-              vel augue laoreet rutrum. </p>
-              <span class="span-like" id="like1">like</span>
-
-          </div>
-
-
-          <div class="articolo">
-            <h3>Article Title 2</h3>
-            <img class="article-image" alt="Not Found" src="image/articolo2.jpg">
-              <img class="tech" alt="Not Found" src="image/tech.jpg">
-            <p>Donec id elit non mi porta gravida at
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h3>Article Title 3</h3>
+          <img class="article-image" alt="Not Found" src="image/articolo3.jpg">
+          <img class="tech" alt="Not Found" src="image/tech.jpg">
+          <p>Donec id elit non mi porta gravida at
             eget metus. Lacinia bibendum nulla
             sed consectetur. Vivamus sagittis lacus
-            vel augue laoreet rutrum.</p>
-            <span class="span-like" id="like2">like</span>
+            vel augue laoreet rutrum. </p>
+            <span class="span-like" id="like3">like</span>
 
-          </div>
+          </article>
 
-          <div class="articolo">
-            <h3>Article Title 3</h3>
-            <img class="article-image" alt="Not Found" src="image/articolo3.jpg">
-              <img class="tech" alt="Not Found" src="image/tech.jpg">
-              <p>Donec id elit non mi porta gravida at
-              eget metus. Lacinia bibendum nulla
-              sed consectetur. Vivamus sagittis lacus
-              vel augue laoreet rutrum. </p>
-              <span class="span-like" id="like3">like</span>
-
-          </div>
-
-          <div class="articolo">
-            <h3>Article Title 3</h3>
+          <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <h3>Article Title 4</h3>
             <img class="article-image" alt="Not Found" src="image/articolo4.jpg">
-              <img class="tech" alt="Not Found" src="image/tech.jpg">
-              <p>Donec id elit non mi porta gravida at
+            <img class="tech" alt="Not Found" src="image/tech.jpg">
+            <p>Donec id elit non mi porta gravida at
               eget metus. Lacinia bibendum nulla
               sed consectetur. Vivamus sagittis lacus
               vel augue laoreet rutrum. </p>
               <span class="span-like" id="like4" >like</span>
+
+            </article>
 
           </div>
 
@@ -91,6 +112,12 @@
           </div>
         </footer>
 
-    <script type="text/javascript" src="js/application.js"></script>
-  </body>
-</html>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+
+        <script type="text/javascript" src="js/application.js"></script>
+      </body>
+      </html>
