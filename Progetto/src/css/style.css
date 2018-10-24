@@ -34,6 +34,7 @@ header .div-hea{
   height: 37px;
   margin-top: 2%;
 }
+
 /*
 #imgH1 {
   height: 37px;
@@ -53,8 +54,11 @@ header .div-hea{
 .article-image {
   height: 100%;
   width: 100%;
+  display: block;
+  margin-bottom: 2%;
 }
 
+/*
 .tech {
   border-radius: 10px;
   width: 13%;
@@ -62,7 +66,7 @@ header .div-hea{
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
+*/
 .span-like {
   display: inline-block;
   border: 1px solid #B1B1B1;
@@ -89,7 +93,7 @@ header .div-hea{
   z-index: 90
 }
 
-#divFot {
+.div-fot {
   margin-top: 1%;
   margin-left: 2%;
   margin-bottom: 40px;

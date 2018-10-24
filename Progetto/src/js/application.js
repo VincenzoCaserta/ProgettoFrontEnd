@@ -1,19 +1,31 @@
-$("#like1").on('click',function (){
-  $("#like1").toggleClass("green-like");
+// Nascondi Cookie
+$('#hereCookie').on('click', () => {
+  $('.cookie').hide();
 });
 
-$("#like2").on('click',function (){
-  $("#like2").toggleClass("green-like");
-});
+//  Cambia la classe allo span
+$('.span-like').on('click', event => {
+   $(event.currentTarget).toggleClass("green-like");
+ })
 
-$("#like3").on('click',function (){
-  $("#like3").toggleClass("green-like");
-});
+ /*
+ $("#like1").on('click',function (){
+   $("#like1").toggleClass("green-like");
+ });
 
-$("#like4").on('click',function (){
-  $("#like4").toggleClass("green-like");
-});
+ $("#like2").on('click',function (){
+   $("#like2").toggleClass("green-like");
+ });
 
+ $("#like3").on('click',function (){
+   $("#like3").toggleClass("green-like");
+ });
+
+ $("#like4").on('click',function (){
+   $("#like4").toggleClass("green-like");
+ });
+ */
+/*
 function hideCookie () {
   document.getElementById('cookie').style.display = 'none';
 };
@@ -21,7 +33,7 @@ function hideCookie () {
 document.getElementById('hereCookie').addEventListener('click', function () {
   hideCookie();
 });
-
+*/
 /*
 function changeColor (id) {
   var x = document.getElementById(id);
