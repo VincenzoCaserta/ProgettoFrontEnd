@@ -9,9 +9,9 @@ header .div-hea{
   padding: 10px;
 }
 
-.span-h-f {
+.span-h-c {
   color: white;
-  margin-left: 2%;
+  margin-left: 2.5%;
   font-size: 80%;
 }
 
@@ -25,9 +25,9 @@ header .div-hea{
   padding: 20px 40px;
 }
 
-.content {
-  margin-left: 3%;
-  margin-right: 3%;
+.row {
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .btn-primary {
@@ -35,6 +35,11 @@ header .div-hea{
   margin-top: 2%;
 }
 
+.label {
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
 /*
 #imgH1 {
   height: 37px;
@@ -54,8 +59,7 @@ header .div-hea{
 .article-image {
   height: 100%;
   width: 100%;
-  display: block;
-  margin-bottom: 2%;
+
 }
 
 /*
@@ -93,9 +97,8 @@ header .div-hea{
   z-index: 90
 }
 
-.div-fot {
-  margin-top: 1%;
-  margin-left: 2%;
+footer {
+  margin-left: 2.5%;
   margin-bottom: 40px;
   font-size: 80%;
   padding: 10px;

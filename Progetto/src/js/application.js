@@ -4,6 +4,7 @@ $('#hereCookie').on('click', () => {
 });
 
 //  Cambia la classe allo span
+
 $('.span-like').on('click', event => {
    $(event.currentTarget).toggleClass("green-like");
  })
