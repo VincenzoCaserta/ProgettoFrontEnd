@@ -1,13 +1,38 @@
+const $ = require('jquery');
+
+$( document ).ready(function() {
+    doAjax();
+});
+
 // Nascondi Cookie
 $('#hereCookie').on('click', () => {
   $('.cookie').hide();
 });
 
 //  Cambia la classe allo span
+ $('.btn, .btn-default').on('click', event => {
+    $(event.currentTarget).toggleClass("btn-success");
+});
 
-$('.span-like').on('click', event => {
-   $(event.currentTarget).toggleClass("green-like");
- })
+  function doAjax(){
+    $.ajax({
+      url: 'ajax-data.json',
+      method: 'GET',
+      data: {
+        key: 'value',
+      },
+      success: function(result) {
+
+      }
+    });
+  };
+
+  //  Cambia la classe allo span
+  /*
+  $('.span-like').on('click', event => {
+     $(event.currentTarget).toggleClass("green-like");
+   })
+  */
 
  /*
  $("#like1").on('click',function (){
