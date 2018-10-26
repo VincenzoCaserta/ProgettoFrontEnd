@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'dist/css/style.min.css': ['src/css/style.css']
+          'dist/css/style.min.css': ['node_modules/bootstrap/dist/css/bootstrap.css','src/css/style.css']
         }
       }
     },
@@ -39,10 +39,11 @@ module.exports = function(grunt) {
   },
   watch: {
     scripts: {
-      files: 'src/js/application.js',
-      tasks: ['browserify'],
+      files: ['src/js/application.js','src/css/style.css' ],
+      tasks: ['browserify','cssmin'],
     }
   },
+  
 });
 
   grunt.loadNpmTasks('grunt-babel');

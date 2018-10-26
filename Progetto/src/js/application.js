@@ -14,18 +14,22 @@ $('#hereCookie').on('click', () => {
     $(event.currentTarget).toggleClass("btn-success");
 });
 
-  function doAjax(){
-    $.ajax({
-      url: 'ajax-data.json',
-      method: 'GET',
-      data: {
-        key: 'value',
-      },
-      success: function(result) {
-
+function doAjax(){
+  $.ajax({
+    url: 'ajax-data.json',
+    method: 'GET',
+    dataType: "json",
+    success: function(result) {
+      for (var i = 0; i < result.length; i++) {
+        $('#provaAjax').append("<p>" + result[i].text + "<p>");
       }
-    });
-  };
+    },
+    error: function(error){
+      console.log("Error:");
+      console.log(error);
+    }
+  });
+};
 
   //  Cambia la classe allo span
   /*

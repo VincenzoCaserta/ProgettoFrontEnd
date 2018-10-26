@@ -15,17 +15,13 @@ header .div-hea{
   font-size: 80%;
 }
 
-/*
-.hero {
-  background-color: #e4edf6;
-}
-*/
-
 .hero-text {
+  background-color: #e4edf6;
   padding: 20px 40px;
 }
 
 .row {
+  margin-top: 3%;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -40,54 +36,11 @@ header .div-hea{
   margin-bottom: 2%;
   margin-top: 2%;
 }
-/*
-#imgH1 {
-  height: 37px;
-  width: 40px;
-}
 
-#imgH2 {
-  height: 37px;
-  width: 70px;
-}
-
-.imgHero {
-  border-radius: 10px;
-  margin-top: 2%;
-}
-*/
 .article-image {
   height: 100%;
   width: 100%;
-
 }
-
-/*
-.tech {
-  border-radius: 10px;
-  width: 13%;
-  height: 13%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-*/
-/*
-.span-like {
-  display: inline-block;
-  border: 1px solid #B1B1B1;
-  border-radius: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-  user-select: none;
-  margin-bottom: 3%;
-}
-
-.green-like {
-  border: 1px solid green;
-  background-color: #5cb85c;
-  color: white;
-}
-*/
 
 .cookie {
   position: fixed;
