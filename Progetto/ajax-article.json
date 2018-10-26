@@ -1,0 +1,12 @@
+[{
+  "title":"articolo1", "image": "src/image/articolo1.jpg", "tech": "tech", "like": "false"
+},
+{
+  "title":"articolo2", "image": "src/image/articolo2.jpg", "tech": "tech", "like": "false"
+},
+{
+  "title":"articolo3", "image": "src/image/articolo3.jpg", "tech": "tech", "like": "false"
+},
+{
+  "title":"articolo4", "image": "src/image/articolo4.jpg", "tech": "tech", "like": "false"
+}]

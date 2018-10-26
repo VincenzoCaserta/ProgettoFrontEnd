@@ -23,7 +23,8 @@ module.exports = function(grunt) {
     uglify: {
     my_target: {
       files: {
-        'dist/js/bundle.min.js': ['src/js/bundle-es5.js']
+        'dist/js/bundle.min.js':
+                  ['src/js/bundle-es5.js']
       }
     }
   },
@@ -39,21 +40,32 @@ module.exports = function(grunt) {
   },
   watch: {
     scripts: {
-      files: ['src/js/application.js','src/css/style.css' ],
-      tasks: ['browserify','cssmin'],
+      files: 'src/js/application.js',
+      tasks: 'browserify',
+    },
+    cssless: {
+      files: 'src/css/style.less',
+      tasks: 'less'
     }
   },
-  
+  less: {
+    development: {
+      files: {
+        'src/css/style.css': 'src/css/style.less'
+      }
+    }
+  },
+
 });
 
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-babel');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-serve');
   grunt.loadNpmTasks('grunt-browserify');
-  grunt.task.registerTask('develop', ['browserify','watch']);
-  grunt.task.registerTask('build', ['cssmin','browserify', 'babel','uglify','serve']);
-
+  grunt.task.registerTask('develop', ['watch']);
+  grunt.task.registerTask('build', ['cssmin','babel','uglify','serve']);
 
 };

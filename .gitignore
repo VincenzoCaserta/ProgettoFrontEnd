@@ -1,5 +1,2 @@
 # NODE JS
 node_modules/
-dist/
-bundle-es5.js
-bundle.js
