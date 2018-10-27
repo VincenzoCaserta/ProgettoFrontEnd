@@ -16,7 +16,7 @@
 
     <div class="cookie">
       <span class="span-h-c">This is a cookie policy click
-        <a id="hereCookie" href="helloWorld.html"  target= "_blank">here</a> to close it</span>
+        <a id="hereCookie" href="#">here</a> to close it</span>
     </div>
 
     <header>
@@ -52,6 +52,7 @@
 
     <section class="row">
 
+<!--
       <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
         <h3>Article Title 1</h3>
         <img class="article-image" alt="Not Found" src="src/image/articolo1.jpg" >
@@ -86,9 +87,11 @@
           vel augue laoreet rutrum. </p>
         <button type="button" id="pr" class="btn btn-default" name="button">like</button>
       </article>
+    -->
 
       <!-- Risolve il problema di visualizzazione con articoli di diversa altezza
         nella visualizzazione md e lg-->
+      <!--
       <article class="clearfix visible-md-block visible-lg-block"></article>
 
       <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -103,8 +106,30 @@
       </article>
 
     </section>
+    -->
+    <section id="articolo" class="row">
 
-  <!--  <div id="provaAjax"> </div> -->
+      <script id="template" type="x-tmpl-mustache">
+
+      {{#articoli}}
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <h3>{{title}}</h3>
+        <img class="article-image" alt="Not Found" src="{{image}}">
+        <span class="label label-pill label-primary">{{tech}}</span>
+        <p>{{text}}</p>
+
+        {{^like}}
+        <button type="button" class="btn btn-default" name="button">like</button>
+        {{/like}}
+        {{#like}}
+        <button type="button" class="btn btn-success" name="button">like</button>
+        {{/like}}
+
+         </article>
+      {{/articoli}}
+
+      </script>
+    </section>
 
     <footer>
       <hr>

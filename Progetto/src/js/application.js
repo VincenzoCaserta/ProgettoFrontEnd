@@ -1,37 +1,62 @@
 const $ = require('jquery');
-
+const Mustache = require('Mustache');
 
 $( document ).ready(function() {
-    doAjax();
+
+  $('#hereCookie').on('click', () => {
+    $('.cookie').fadeOut();
+  });
+
+  doAjax();
+
+
 });
 
-// Nascondi Cookie
-$('#hereCookie').on('click', () => {
-  $('.cookie').hide();
-});
+
+/*
 
 
-//  Cambia la classe allo span
- $('.btn, .btn-default').on('click', event => {
-    $(event.currentTarget).toggleClass("btn-success");
-});
+  $('.btn, .btn-default').on('click', event => {
+      $(event.currentTarget).toggleClass("btn-success");
+  });
 
+    $('#hereCookie').on('click', () => {
+      $('.cookie').hide();
+    });
+
+
+*/
+/**
+function loadUser() {
+  var template = $('#template').html();
+  Mustache.parse(template);   // optional, speeds up future uses
+  var rendered = Mustache.render(template, articolo);
+  $('#articolo').html(rendered);
+  console.log(rendered);
+};
+**/
 function doAjax(){
   $.ajax({
-    url: 'ajax-data.json',
+    url: 'ajax-article.json',
     method: 'GET',
     dataType: "json",
     success: function(result) {
-      $.each(result, function(key, value) {
-        $('#provaAjax').append("<p>" + value.text+ "<p>");
-      })
-    //  for (var i = 0; i < result.length; i++) {
-    //    $('#provaAjax').append("<p>" + result[i].text + "<p>");
-    //  }
+      //  $.each(result, function(key, value) {
+      var template = $('#template').html();
+      console.log(template);
+      var rendered = Mustache.render(template, result);
+      console.log('il renderizzato:');
+        console.log(rendered);
+      $('#articolo').html(rendered);
     },
     error: function(error){
-      console.log("Error:");
+      console.log("Errore insuccesso chiamata:");
       console.log(error);
+    },
+    complete: function() {
+      $('.btn, .btn-default').on('click', event => {
+          $(event.currentTarget).toggleClass("btn-success");
+      });
     }
   });
 };

@@ -1,12 +1,30 @@
-[{
-  "title":"articolo1", "image": "src/image/articolo1.jpg", "tech": "tech", "like": "false"
-},
 {
-  "title":"articolo2", "image": "src/image/articolo2.jpg", "tech": "tech", "like": "false"
-},
-{
-  "title":"articolo3", "image": "src/image/articolo3.jpg", "tech": "tech", "like": "false"
-},
-{
-  "title":"articolo4", "image": "src/image/articolo4.jpg", "tech": "tech", "like": "false"
-}]
+  "articoli": [
+  {"title":"Articolo Title 1",
+    "image": "https://www.lse.ac.uk/management/assets/images/research/technology-600x600.png",
+    "text": "Donec id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+    "tech": "tech",
+    "like": false
+  },
+
+  {"title":"Article Title 2",
+     "image": "http://mpatech.eu/home/wp-content/uploads/2017/06/wirelesscharge-600x600.jpg",
+      "text": "Alter id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+      "tech": "tech",
+      "like": true
+    },
+
+  {"title":"Article Title 3",
+    "image": "https://www.tnet.it/wp-content/uploads/2018/07/cloud-server-600x600.jpg",
+    "text": "Micon id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+    "tech": "tech",
+    "like": false
+  },
+
+  {"title":"Article Title 4",
+    "image": "https://www.tnet.it/wp-content/uploads/2018/08/cloudbag-600x600.jpg",
+    "text": "Siton id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+    "tech": "tech",
+    "like": false
+  }]
+}
