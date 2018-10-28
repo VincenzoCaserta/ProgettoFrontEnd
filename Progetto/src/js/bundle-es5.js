@@ -10601,28 +10601,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			doAjax();
 		});
 
-		/*
-  
-  
-    $('.btn, .btn-default').on('click', event => {
-        $(event.currentTarget).toggleClass("btn-success");
-    });
-  
-      $('#hereCookie').on('click', () => {
-        $('.cookie').hide();
-      });
-  
-  
-  */
-		/**
-  function loadUser() {
-    var template = $('#template').html();
-    Mustache.parse(template);   // optional, speeds up future uses
-    var rendered = Mustache.render(template, articolo);
-    $('#articolo').html(rendered);
-    console.log(rendered);
-  };
-  **/
+		$(document).ajaxComplete(function () {
+			$('.btn, .btn-default').on('click', function (event) {
+				$(event.currentTarget).toggleClass("btn-success");
+			});
+		});
+
 		function doAjax() {
 			$.ajax({
 				url: 'ajax-article.json',
@@ -10631,20 +10615,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				success: function success(result) {
 					//  $.each(result, function(key, value) {
 					var template = $('#template').html();
-					console.log(template);
+					//console.log(template);
 					var rendered = Mustache.render(template, result);
-					console.log('il renderizzato:');
-					console.log(rendered);
+					//console.log('il renderizzato:');
+					//    console.log(rendered);
 					$('#articolo').html(rendered);
 				},
 				error: function error(_error) {
 					console.log("Errore insuccesso chiamata:");
 					console.log(_error);
-				},
-				complete: function complete() {
-					$('.btn, .btn-default').on('click', function (event) {
-						$(event.currentTarget).toggleClass("btn-success");
-					});
 				}
 			});
 		};

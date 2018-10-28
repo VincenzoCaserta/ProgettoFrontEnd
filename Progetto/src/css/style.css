@@ -1,51 +1,73 @@
-body {
+* {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-header .div-hea {
+/*Inizio Stile Header */
+header {
   background-color: #223a48;
-  padding: 1%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
 }
-.span-h-c {
+header span {
   color: white;
-  margin-left: 4%;
+  margin-left: 5%;
   font-size: 80%;
 }
+/* Fine Stile Header */
+/*Inizio Stile Hero */
 .jumbotron {
   background-color: #e4edf6;
 }
-.hero-text {
+.jumbotron .hero-text {
   margin-left: 5%;
   margin-right: 5%;
 }
-.row {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.btn-primary {
+.jumbotron .btn-primary {
   height: 37px;
   margin-top: 2%;
 }
-.label {
+/* Fine Stile Hero */
+/*Inizo Stile Content */
+.row {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.row article {
+  margin-bottom: 2%;
+}
+.row article .label {
   display: inline-block;
   margin-bottom: 2%;
   margin-top: 2%;
-}
-.article-image {
-  height: 100%;
-  width: 100%;
+  padding: 0.4em 0.6em 0.4em;
 }
 .cookie {
   position: fixed;
   bottom: 0;
   background-color: #223a48;
   width: 100%;
-  padding: 1%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
   z-index: 90;
 }
-footer {
-  margin-left: 2.5%;
-  margin-bottom: 4%;
+.cookie span {
+  color: white;
+  margin-left: 5%;
   font-size: 80%;
-  padding: 1%;
 }
+/* Fine stile Content */
+/* Inizio Stile Footer */
+footer {
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+footer span {
+  font-size: 80%;
+}
+@media (max-width: 425px) {
+  footer {
+    margin-bottom: 10%;
+  }
+}
+/* Fine Stile Footer */

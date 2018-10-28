@@ -44,14 +44,14 @@ module.exports = function(grunt) {
       tasks: 'browserify',
     },
     cssless: {
-      files: 'src/css/style.less',
+      files: 'src/css/*.less',
       tasks: 'less'
     }
   },
   less: {
     development: {
       files: {
-        'src/css/style.css': 'src/css/style.less'
+        'src/css/style.css': 'src/css/application.less'
       }
     }
   },
