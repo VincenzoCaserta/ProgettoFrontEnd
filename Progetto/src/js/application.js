@@ -11,7 +11,7 @@ $( document ).ready(function() {
 });
 
 $( document ).ajaxComplete(function() {
-  $('.btn, .btn-default').on('click', event => {
+  $('article .btn, .btn-default').on('click', event => {
       $(event.currentTarget).toggleClass("btn-success");
   });
 })

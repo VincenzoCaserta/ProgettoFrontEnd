@@ -10602,7 +10602,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		});
 
 		$(document).ajaxComplete(function () {
-			$('.btn, .btn-default').on('click', function (event) {
+			$(' article .btn, .btn-default').on('click', function (event) {
 				$(event.currentTarget).toggleClass("btn-success");
 			});
 		});
