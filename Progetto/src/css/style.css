@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*Inizio Stile Header */
+header {
+  background-color: #223a48;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+}
+header span {
+  color: white;
+  margin-left: 5%;
+  font-size: 80%;
+}
+/* Fine Stile Header */
+/*Inizio Stile Hero */
+.jumbotron {
+  background-color: #e4edf6;
+}
+.jumbotron .hero-text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.jumbotron .btn-primary {
+  height: 37px;
+  margin-top: 2%;
+}
+/* Fine Stile Hero */
+/*Inizo Stile Content */
+.row {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.row article {
+  margin-bottom: 2%;
+}
+.row article .label {
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 0.4em 0.6em 0.4em;
+}
+.cookie {
+  position: fixed;
+  bottom: 0;
+  background-color: #223a48;
+  width: 100%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  z-index: 90;
+}
+.cookie span {
+  color: white;
+  margin-left: 5%;
+  font-size: 80%;
+}
+/* Fine stile Content */
+/* Inizio Stile Footer */
+footer {
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+footer span {
+  font-size: 80%;
+}
+@media (max-width: 425px) {
+  footer {
+    margin-bottom: 10%;
+  }
+}
+/* Fine Stile Footer */
