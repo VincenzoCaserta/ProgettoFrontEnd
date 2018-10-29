@@ -10602,14 +10602,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		});
 
 		$(document).ajaxComplete(function () {
-			$(' article .btn, .btn-default').on('click', function (event) {
+			$('article .btn, .btn-default').on('click', function (event) {
 				$(event.currentTarget).toggleClass("btn-success");
+				console.log(event.currentTarget);
+
+				//$.ajax({
+				//  url: '/article/',
+				//  method: 'GET',
+				//  dataType: "json",
+				//  success: function(result)
 			});
 		});
 
 		function doAjax() {
 			$.ajax({
-				url: 'ajax-article.json',
+				url: '/articles',
 				method: 'GET',
 				dataType: "json",
 				success: function success(result) {

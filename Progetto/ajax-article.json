@@ -1,30 +1,39 @@
 {
   "articoli": [
-  {"title":"Articolo Title 1",
-    "image": "https://www.lse.ac.uk/management/assets/images/research/technology-600x600.png",
-    "text": "Donec id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
-    "tech": "tech",
-    "like": false
-  },
-
-  {"title":"Article Title 2",
-     "image": "http://mpatech.eu/home/wp-content/uploads/2017/06/wirelesscharge-600x600.jpg",
+    {
+      "title": "Articolo Title 1",
+      "image": "https://www.lse.ac.uk/management/assets/images/research/technology-600x600.png",
+      "text": "Donec id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+      "tech": "tech",
+      "like": false
+    },
+    {
+      "title": "Article Title 2",
+      "image": "http://mpatech.eu/home/wp-content/uploads/2017/06/wirelesscharge-600x600.jpg",
       "text": "Alter id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
       "tech": "tech",
       "like": true
     },
-
-  {"title":"Article Title 3",
-    "image": "https://www.tnet.it/wp-content/uploads/2018/07/cloud-server-600x600.jpg",
-    "text": "Micon id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
-    "tech": "tech",
-    "like": false
-  },
-
-  {"title":"Article Title 4",
-    "image": "https://www.tnet.it/wp-content/uploads/2018/08/cloudbag-600x600.jpg",
-    "text": "Siton id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
-    "tech": "tech",
-    "like": false
-  }]
+    {
+      "title": "Article Title 3",
+      "image": "https://www.tnet.it/wp-content/uploads/2018/07/cloud-server-600x600.jpg",
+      "text": "Micon id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+      "tech": "tech",
+      "like": false
+    },
+    {
+      "title": "Article Title 4",
+      "image": "https://www.tnet.it/wp-content/uploads/2018/08/cloudbag-600x600.jpg",
+      "text": "Siton id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+      "tech": "tech",
+      "like": false
+    },
+    {
+      "title": "Article Title 6",
+      "image": "http://mpatech.eu/home/wp-content/uploads/2017/06/wirelesscharge-600x600.jpg",
+      "text": "scem id elit non mi porta gravida at eget metus. Lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum.",
+      "tech": "tech",
+      "like": true
+    }
+  ]
 }

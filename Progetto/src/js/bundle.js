@@ -11062,14 +11062,22 @@ $( document ).ready(function() {
 });
 
 $( document ).ajaxComplete(function() {
-  $(' article .btn, .btn-default').on('click', event => {
+  $('article .btn, .btn-default').on('click', event => {
       $(event.currentTarget).toggleClass("btn-success");
+      console.log(event.currentTarget);
+
+      //$.ajax({
+      //  url: '/article/',
+      //  method: 'GET',
+      //  dataType: "json",
+      //  success: function(result)
+});
   });
-})
+
 
 function doAjax(){
   $.ajax({
-    url: 'ajax-article.json',
+    url: '/articles',
     method: 'GET',
     dataType: "json",
     success: function(result) {
