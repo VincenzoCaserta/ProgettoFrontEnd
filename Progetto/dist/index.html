@@ -27,7 +27,8 @@
           nisi ut aliquid ex ea commodi consequatur.<br>
         </span>
 
-        <a href="https://github.com/" class="btn btn-primary">
+        <a type="button" data-toggle="modal" data-target="#basicModalGit" class="btn btn-primary">
+
           <svg  fill="white" height="21" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="21" aria-hidden="true">
             <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
             0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
@@ -38,7 +39,7 @@
               </path>
           </svg>
         </a>
-        <a href="helloWorld.html" class="btn btn-primary">Slides >></a>
+        <a type="button" data-toggle="modal" data-target="#basicModalHello" class="btn btn-primary">Slides >></a>
       </div>
     </section>
 
@@ -54,10 +55,10 @@
         <p>{{text}}</p>
 
         {{^like}}
-        <button type="button" class="btn btn-default" name="button">like</button>
+        <button id={{id}} type="button" class="btn btn-default" name="button" data-like={{like}}>like</button>
         {{/like}}
         {{#like}}
-        <button type="button" class="btn btn-success" name="button">like</button>
+        <button id={{id}} type="button" class="btn btn-success" name="button" data-like={{like}}>like</button>
         {{/like}}
 
          </article>
@@ -66,10 +67,57 @@
       </script>
     </section>
 
+  
+
     <footer>
       <hr>
       <span>&copy 2018 Company, Inc.</span>
     </footer>
+
+
+
+    <!-- Modal Github -->
+    <div class="modal fade" id="basicModalGit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Github</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span>Vuoi andare al sito di Github?</span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a type="button" href="https://github.com/" class="btn btn-primary">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Slides -->
+    <div class="modal fade" id="basicModalHello" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Slides</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span>Vuoi andare ad HelloWorld?</span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a type="button" href="helloWorld.html" class="btn btn-primary">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script type="text/javascript" src="js/bundle.min.js"></script>
   </body>

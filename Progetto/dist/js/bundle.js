@@ -50,7 +50,7 @@
    * Safe way of detecting whether or not the given thing is a primitive and
    * whether it has the given property
    */
-  function primitiveHasOwnProperty (primitive, propName) {  
+  function primitiveHasOwnProperty (primitive, propName) {
     return (
       primitive != null
       && typeof primitive !== 'object'
@@ -419,7 +419,7 @@
           while (intermediateValue != null && index < names.length) {
             if (index === names.length - 1)
               lookupHit = (
-                hasProperty(intermediateValue, names[index]) 
+                hasProperty(intermediateValue, names[index])
                 || primitiveHasOwnProperty(intermediateValue, names[index])
               );
 
@@ -16457,13 +16457,46 @@ const sli = require('slick-carousel');
 
 $( document ).ready(function() {
 
-
   $('#hereCookie').on('click', () => {
     $('.cookie').fadeOut();
   });
   doAjax();
 
-
+  $('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
 });
 
 function setLike(self){
@@ -16475,10 +16508,9 @@ function setLike(self){
     data: JSON.stringify({ id: self.attr('id'), like: self.attr('data-like') }),
     success: function(result){
     //console.log('Log dopo della chiamata:' + result);
-    if(result === 'ok'){
-      self.toggleClass("btn-success")
-      self.attr('data-like', result);
-    }
+        self.toggleClass("btn-success")
+        self.attr('data-like', result);   // data-like
+
       //  console.log('valore di data-like:' + self.attr('data-like'));
 
     },
