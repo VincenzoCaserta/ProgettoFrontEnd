@@ -3,34 +3,54 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*Inizio Stile Header */
+.navbar {
+  margin-bottom: 0;
+}
 /* Fine Stile Header */
 /*Inizio Stile Hero */
 .jumbotron {
-  background-color: #e4edf6;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-.jumbotron .hero-text {
-  margin-left: 5%;
-  margin-right: 5%;
+.img-responsive {
+  height: 500px !important;
 }
-.jumbotron .btn-primary {
-  height: 37px;
-  margin-top: 2%;
+@media (max-width: 768px) {
+  .img-responsive {
+    height: 350px !important;
+  }
+}
+@media (max-width: 375px) {
+  .img-responsive {
+    height: 200px !important;
+  }
+}
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
 /* Fine Stile Hero */
 /*Inizo Stile Content */
-.row {
-  margin-left: 4%;
-  margin-right: 4%;
-}
-.row article {
-  margin-bottom: 2%;
-}
-.row article .label {
-  display: inline-block;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  padding: 0.4em 0.6em 0.4em;
-}
 .cookie {
   position: fixed;
   bottom: 0;
@@ -44,17 +64,6 @@
   color: white;
   margin-left: 5%;
   font-size: 80%;
-}
-.carousel {
-  width: 90%;
-  margin: 0px auto;
-}
-.slick-slide {
-  margin: 10px;
-}
-.slick-slide img {
-  width: 100%;
-  border: 2px solid #fff;
 }
 /* Fine stile Content */
 /* Inizio Stile Footer */

@@ -9,14 +9,14 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         files: {
-          'src/js/bundle.js':'src/js/application.js'
+          'src/js/bundle.js':['node_modules/bootstrap/js/bootstrap.min.js','src/js/application.js']
         }
       }
     },
     cssmin: {
       target: {
         files: {
-          'dist/css/style.min.css': ['node_modules/slick-carousel/slick/slick-theme.css','node_modules/slick-carousel/slick/slick.css','node_modules/bootstrap/dist/css/bootstrap.css','src/css/style.css']
+          'dist/css/style.min.css': ['node_modules/bootstrap/dist/css/bootstrap.min.css','src/css/style.css']
         }
       }
     },

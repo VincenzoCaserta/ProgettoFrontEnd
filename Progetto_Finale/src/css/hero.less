@@ -1,15 +1,56 @@
 /*Inizio Stile Hero */
 .jumbotron {
-  background-color: #e4edf6;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 
-  .hero-text {
-    margin-left: @margin-left;
-    margin-right: @margin-right;
+}
+
+.img-responsive {
+  height: 500px !important;
+
+  @media(max-width: 768px){
+    height: 350px !important;
   }
 
-  .btn-primary {
-    height: 37px;
-    margin-top: 2%;
+  @media(max-width: 375px){
+    height: 200px !important;
   }
 }
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+
 /* Fine Stile Hero */
