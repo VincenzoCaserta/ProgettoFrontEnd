@@ -3,6 +3,42 @@
 
 .navbar {
   margin-bottom: 0;
+  background-color: @background-color;
+
+
+//.navbar-default .container-fluid{
+//  background-color: #5e2129;
+
+  .navbar-brand{
+    color: white;
+  }
+
+  .navbar-nav {
+    border-right: 1px solid white;
+
+     li > a:hover {
+      color:#bbbaba;
+    }
+
+    .active a{
+    color: black;
+    background-color: #7a4448;
+    }
+
+    .active a:hover{
+      color: white;
+      background-color: #7a4448;
+    }
+
+     li{
+      border-left: 1px solid white;
+
+      a{
+          color: white;
+         }
+
+      }
+  }
 }
 
 /* Fine Stile Header */

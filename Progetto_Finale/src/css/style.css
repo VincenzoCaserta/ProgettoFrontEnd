@@ -1,31 +1,109 @@
-* {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 2rem;
+}
+@media -breakpoint-up (sm) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+@media -breakpoint-up (md) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+@media -breakpoint-up (lg) {
+  html {
+    font-size: 1.8rem;
+  }
 }
 /*Inizio Stile Header */
 .navbar {
   margin-bottom: 0;
+  background-color: #5e2129;
+}
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar .navbar-nav {
+  border-right: 1px solid white;
+}
+.navbar .navbar-nav li > a:hover {
+  color: #bbbaba;
+}
+.navbar .navbar-nav .active a {
+  color: black;
+  background-color: #7a4448;
+}
+.navbar .navbar-nav .active a:hover {
+  color: white;
+  background-color: #7a4448;
+}
+.navbar .navbar-nav li {
+  border-left: 1px solid white;
+}
+.navbar .navbar-nav li a {
+  color: white;
 }
 /* Fine Stile Header */
 /*Inizio Stile Hero */
-.jumbotron {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
+.carousel {
+  margin-top: 51px;
 }
-.img-responsive {
-  height: 500px !important;
-}
-@media (max-width: 768px) {
-  .img-responsive {
-    height: 350px !important;
+@media (min-width: 1024px) {
+  #carouselFade .item {
+    height: 600px !important;
   }
 }
-@media (max-width: 375px) {
-  .img-responsive {
+@media (min-width: 1024px) {
+  #carouselFadeS .item {
+    height: 370px !important;
+  }
+}
+/*
+.item .img-responsive {
+  width: auto;
+  height: 500px !important;
+
+  @media(max-width: 768px){
+    height: 350px !important;
+  }
+
+  @media(max-width: 425px){
+    height: 250px !important;
+  }
+
+  @media(max-width: 375px){
     height: 200px !important;
   }
 }
+*/
+/*
+#image-carousel {
+  height: 500px !important;
+
+  @media(max-width: 768px){
+    height: 350px !important;
+  }
+
+  @media(max-width: 425px){
+    height: 250px !important;
+  }
+
+  @media(max-width: 375px){
+    height: 200px !important;
+  }
+}
+*/
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
@@ -50,30 +128,49 @@
   z-index: 2;
 }
 /* Fine Stile Hero */
-/*Inizo Stile Content */
+/*Inizo Stile Content index.html */
+.row {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+}
+.row .img-responsive {
+  margin: 0 auto;
+}
+.row article {
+  padding: 8%;
+}
+.row p {
+  font-size: 15px;
+}
 .cookie {
   position: fixed;
   bottom: 0;
-  background-color: #223a48;
+  background-color: #5e2129;
   width: 100%;
-  padding-top: 0.7%;
-  padding-bottom: 0.7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   z-index: 90;
 }
 .cookie span {
   color: white;
   margin-left: 5%;
-  font-size: 80%;
 }
-/* Fine stile Content */
+/* Fine stile Content index.html */
+/* Inizio stile Content iNostriVini.html */
+.row-vini {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.row-vini .img-responsive {
+  margin: 0 auto;
+}
+/* Fine Content iNostriVini.html */
 /* Inizio Stile Footer */
 footer {
   margin-bottom: 4%;
   margin-left: 5%;
   margin-right: 5%;
-}
-footer span {
-  font-size: 80%;
 }
 @media (max-width: 425px) {
   footer {
