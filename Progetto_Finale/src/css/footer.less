@@ -2,12 +2,17 @@
 @import "variable.less";
 
 footer {
-  margin-bottom: 7%;
-  margin-left: @margin-left;
-  margin-right: @margin-right;
+  background-color: @background-color;
+  margin-top: 4%;
+  margin-bottom: 0;
+  text-align: center;
 
-  @media(max-width: 425px){
-      margin-bottom: 10%;
+  ul.nav.nav-pills {
+    display: inline-table;
+  }
+
+  li {
+    margin-right: 70px;
   }
 }
 /* Fine Stile Footer */
