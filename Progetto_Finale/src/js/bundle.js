@@ -12756,6 +12756,11 @@ require('bootstrap');
 
 $( document ).ready(function() {
 
+  console.log($('.cookie').attr('data-visible'));
+  if(!$('.cookie').attr('data-visible')){
+    console.log('nell if');
+    $('.cookie').hide();
+  }
 
   secActive();
 
@@ -12764,8 +12769,6 @@ $( document ).ready(function() {
   playCarousel();
 
 });
-
-
 
 function secActive() {
   $('#filterType button').on('click', function(){
@@ -12778,15 +12781,17 @@ function secActive() {
     }
     else{
       var matching = $('.row-vini article').filter(function(){
-                     return $(this).attr('data-group') == gruppo;
-                  });
+        return $(this).attr('data-group') == gruppo;
+      });
       matching.fadeIn();
     }
   });
 }
 
 function hideCookie(){
-  $('#hereCookie').on('click', () => {
+  $('#b-cookie').on('click', () => {
+    $('.cookie').attr('data-visible', false);
+    console.log($('.cookie'));
     $('.cookie').fadeOut();
   });
 }

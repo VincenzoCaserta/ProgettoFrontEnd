@@ -7,142 +7,136 @@
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAYxa6ADUNYwB5dIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAAAAAAMwAAAAAAAAMwAAAAAAAAMwAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAMzMzAAAAAAAzIiIwAAAAADIiIiMAAAAAMiIiIjAAAAAyIiIiIwAAADERERETAAAAAzAAADAAAAAAMwADAAAAAAADMDAAAAAAAAAzAADn/wAAz/8AAJ//AAAv/wAAd/8AAPv/AAD8DwAA/AcAAPwDAAD8AQAA/AAAAPwAAAD+fQAA/zsAAP+XAAD/zwAA" rel="icon" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
-
-
   </head>
 
   <body>
 
-<header>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-        </button>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-        <a class="navbar-brand" href="index.html">
-        <img src="..." alt="Nostro Logo">
-        </a>
-      </div>
+            <a class="navbar-brand" href="index.html">Cantine Guastaferro</a>
+          </div>
 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="chiSiamo.html">Chi siamo</a></li>
-          <li class="active"><a href="iNostriVini.html">I nostri vini</a></li>
-        </ul>
-      </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="chiSiamo.html">Chi siamo</a></li>
+              <li class="active"><a href="iNostriVini.html">I nostri vini</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cookie" data-visible=true>
+      Questo sito utilizza i cookie per migliorare servizi
+       ed esperienza degli utenti. Continuando la navigazione nel sito acconsenti al loro uso.
+      <a href="www.google.it" target="_blank"> Maggiori informazioni</a><br>
+      <button id="b-cookie" class="btn btn-warning text-center">Chiudi</button>
     </div>
-  </nav>
 
-</header>
+    <section id="carouselFadeS" class="carousel slide carousel-fade" data-ride="carousel">
+      <img class="logo img-circle" src="dist/image/Guastaferro.jpg" alt="">
 
-<div class="cookie">
-  <span>This is a cookie policy click
-    <a id="hereCookie" href="#">here</a> to close it.</span>
-</div>
-
-<section id="carouselFadeS" class="carousel slide carousel-fade" data-ride="carousel">
-
-  <ol class="carousel-indicators">
+    <ol class="carousel-indicators">
       <li data-target="#carouselFadeS" data-slide-to="0" class="active"></li>
       <li data-target="#carouselFadeS" data-slide-to="1"></li>
       <li data-target="#carouselFadeS" data-slide-to="2"></li>
-  </ol>
+    </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img class="img-responsive"  src="http://www.alvolonews.it/wp-content/uploads/2016/09/vigneti.jpg" alt="Vigneto 1">
+        <img class="img-responsive"  src="dist/image/vigneti1.jpg" alt="Vigneto 1">
       </div>
       <div class="item">
-        <img class="img-responsive"  src="http://www.csp.it/wp-content/uploads/2013/06/tuscany-428041-2000x1334.jpg" alt="Vigneto2">
+        <img class="img-responsive"  src="dist/image/vigneti2.jpg" alt="Vigneto2">
       </div>
       <div class="item">
-        <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Vigneto_nel_chianti.jpg" alt="Vigneto 3">
+        <img class="img-responsive" src="dist/image/vigneti3.jpg" alt="Vigneto 3">
       </div>
     </div>
 
-  <a class="carousel-control-prev" href="#carouselFades" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselFades" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
-  </a>
+    </a>
     <a class="carousel-control-next" href="#carouselFadeS" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</section>
+  </section>
 
 				<!-- Category block -->
-		<div class="itemListCategory text-center">
-			<h2>I nostri vini</h2>
-		</div>
+	<div class="itemListCategory text-center">
+		<h2>I nostri vini</h2>
+	</div>
 
 		<!-- Item list  -->
-<div class="wrap-filter text-center">
-  <div id="filterType" class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default active" data-group="all">Tutti</button>
-  <button type="button" class="btn btn-default"data-group="Bianco">Bianco</button>
-  <button type="button" class="btn btn-default" data-group="Rosso">Rosso</button>
-  <button type="button" class="btn btn-default" data-group="Rosato">Rosato</button>
+  <div class="wrap-filter text-center">
+    <div id="filterType" class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-warning active" data-group="all">Tutti</button>
+      <button type="button" class="btn btn-warning"data-group="Bianco">Bianco</button>
+      <button type="button" class="btn btn-warning" data-group="Rosso">Rosso</button>
+      <button type="button" class="btn btn-warning" data-group="Rosato">Rosato</button>
+    </div>
   </div>
-</div>
 
 
-<section class="row-vini">
-
-      <article class="col-lg-4 col-sm-6 text-center mb-4 " data-group="Rosso">
-        <img class="rounded-circle" src="dist/image/taurasi-rosso.png" alt="">
+  <section class="row-vini">
+    <article class="col-lg-4 col-sm-6 text-center mb-4 " data-group="Rosso">
+      <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/taurasi-rosso.png" alt="">
         <h3>Taurasi</h3>
         <p>Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
-      </article>
+    </article>
 
-      <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Bianco">
-        <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/Bechar-bianco.png" alt="">
-        <h3>Bechar</h3>
-        <p>Un vino bianco luminoso intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
-      </article>
+    <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Bianco">
+      <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/Bechar-bianco.png" alt="">
+      <h3>Bechar</h3>
+      <p>Un vino bianco luminoso intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
+    </article>
 
-      <article class="col-lg-4 col-sm-6 text-center mb-4", data-group="Rosso">
-        <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/Tauri-rosso.png" alt="">
-        <h3>Tauri</h3>
-        <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
-      </article>
+    <article class="col-lg-4 col-sm-6 text-center mb-4", data-group="Rosso">
+      <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/Tauri-rosso.png" alt="">
+      <h3>Tauri</h3>
+      <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
+    </article>
 
-      <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Rosso">
-        <img class=" img-fluid d-block mx-auto img-responsive" src="dist/image/salae.domini-rosso.png" alt="">
-        <h3>Salae Domini</h3>
-        <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
-      </article>
+    <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Rosso">
+      <img class=" img-fluid d-block mx-auto img-responsive" src="dist/image/salae.domini-rosso.png" alt="">
+      <h3>Salae Domini</h3>
+      <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
+    </article>
 
-      <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Rosato">
-        <img class=" img-fluid d-block mx-auto img-responsive" src="dist/image/Mel-rosato.png" alt="Saturnino">
-        <h3>Mel</h3>
-        <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
-      </article>
+    <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Rosato">
+      <img class=" img-fluid d-block mx-auto img-responsive" src="dist/image/Mel-rosato.png" alt="Saturnino">
+      <h3>Mel</h3>
+      <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
+    </article>
 
-      <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Bianco">
-        <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/Fiagre-bianco.png" alt="">
-        <h3>Fiagre</h3>
-        <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
-      </article>
+    <article class="col-lg-4 col-sm-6 text-center mb-4" data-group="Bianco">
+      <img class="img-fluid d-block mx-auto img-responsive" src="dist/image/Fiagre-bianco.png" alt="">
+      <h3>Fiagre</h3>
+      <p>Un vino rosso intenso, aglianico, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante.</p>
+    </article>
 
-      <article class="clearfix visible-sm-block visible-md-block visible-lg-block"></article>
+    <article class="clearfix visible-sm-block visible-md-block visible-lg-block"></article>
+  </section>
 
+  <footer>
+    <hr>
+    <span>Cantine Guastaferro &copy 2010</span>
+  </footer>
 
-</section>
-
-    <footer>
-      <hr>
-      <span>&copy 2018 Company, Inc.</span>
-    </footer>
-
-    <script type="text/javascript" src="dist/js/bundle.min.js"></script>
-
-  </body>
-
+  <script type="text/javascript" src="dist/js/bundle.min.js"></script>
+  
+</body>
 </html>

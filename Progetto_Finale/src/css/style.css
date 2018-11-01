@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  background-color: beige;
 }
 html {
   font-size: 2rem;
@@ -64,6 +65,15 @@ html {
 .carousel {
   margin-top: 30px;
 }
+.carousel .logo {
+  left: 4%;
+  position: absolute;
+  z-index: 20;
+  top: 20%;
+  height: auto;
+  opacity: 0.92;
+  width: 30%;
+}
 @media (min-width: 1024px) {
   #carouselFade .item {
     height: 600px !important;
@@ -74,41 +84,6 @@ html {
     height: 370px !important;
   }
 }
-/*
-.item .img-responsive {
-  width: auto;
-  height: 500px !important;
-
-  @media(max-width: 768px){
-    height: 350px !important;
-  }
-
-  @media(max-width: 425px){
-    height: 250px !important;
-  }
-
-  @media(max-width: 375px){
-    height: 200px !important;
-  }
-}
-*/
-/*
-#image-carousel {
-  height: 500px !important;
-
-  @media(max-width: 768px){
-    height: 350px !important;
-  }
-
-  @media(max-width: 425px){
-    height: 250px !important;
-  }
-
-  @media(max-width: 375px){
-    height: 200px !important;
-  }
-}
-*/
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
@@ -148,33 +123,45 @@ html {
 .row p {
   font-size: 15px;
 }
-/*
 .cookie {
+  padding: 6%;
   position: fixed;
   bottom: 0;
-  background-color: @background-color;
+  background-color: #5e2129;
   width: 100%;
-  .padding-top-down();
+  padding-top: 1%;
+  padding-bottom: 1%;
   z-index: 90;
-
-  span {
-    .create-span-h-f();
-  }
+  color: white;
 }
-*/
+.cookie button {
+  margin-top: 1%;
+}
 /* Fine stile Content index.html */
 /* Inizio stile Content iNostriVini.html */
+.wrap-filter {
+  margin-top: 3%;
+}
 .row-vini {
   margin-left: 5%;
   margin-right: 5%;
 }
+.row-vini article {
+  margin-top: 6%;
+}
 .row-vini .img-responsive {
   margin: 0 auto;
+  width: 40%;
 }
 /* Fine Content iNostriVini.html */
+/* Inizio COntent chiSiamo.html */
+.container-chiSiamo {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 /* Inizio Stile Footer */
 footer {
-  margin-bottom: 5%;
+  margin-bottom: 7%;
   margin-left: 5%;
   margin-right: 5%;
 }

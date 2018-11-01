@@ -12106,6 +12106,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 		$(document).ready(function () {
 
+			console.log($('.cookie').attr('data-visible'));
+			if (!$('.cookie').attr('data-visible')) {
+				console.log('nell if');
+				$('.cookie').hide();
+			}
+
 			secActive();
 
 			hideCookie();
@@ -12131,7 +12137,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		}
 
 		function hideCookie() {
-			$('#hereCookie').on('click', function () {
+			$('#b-cookie').on('click', function () {
+				$('.cookie').attr('data-visible', false);
+				console.log($('.cookie'));
 				$('.cookie').fadeOut();
 			});
 		}
