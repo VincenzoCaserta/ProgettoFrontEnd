@@ -62,7 +62,7 @@ html {
 /* Fine Stile Header */
 /*Inizio Stile Hero */
 .carousel {
-  margin-top: 51px;
+  margin-top: 30px;
 }
 @media (min-width: 1024px) {
   #carouselFade .item {
@@ -148,19 +148,20 @@ html {
 .row p {
   font-size: 15px;
 }
+/*
 .cookie {
   position: fixed;
   bottom: 0;
-  background-color: #5e2129;
+  background-color: @background-color;
   width: 100%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  .padding-top-down();
   z-index: 90;
+
+  span {
+    .create-span-h-f();
+  }
 }
-.cookie span {
-  color: white;
-  margin-left: 5%;
-}
+*/
 /* Fine stile Content index.html */
 /* Inizio stile Content iNostriVini.html */
 .row-vini {
@@ -169,7 +170,6 @@ html {
 }
 .row-vini .img-responsive {
   margin: 0 auto;
-  border-radius: 20%;
 }
 /* Fine Content iNostriVini.html */
 /* Inizio Stile Footer */

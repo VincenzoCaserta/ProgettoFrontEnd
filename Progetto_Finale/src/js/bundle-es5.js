@@ -12111,16 +12111,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			hideCookie();
 
 			playCarousel();
-
-			$(document).on("click", "#filter", function () {
-				$("li.filter").each(function () {
-					if ($(this).attr("data-filter") !== ".fave") {
-						$(this).css("display", "none");
-					}
-				});
-			});
-
-			$("div[data-group='Bianco']");
 		});
 
 		function secActive() {
@@ -12137,8 +12127,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					});
 					matching.fadeIn();
 				}
-				//  var gruppo = $(this).attr('data-group');
-				//  console.log($("button[data-group="+gruppo+"]"));
 			});
 		}
 
