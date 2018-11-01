@@ -27,6 +27,9 @@ html {
   }
 }
 /*Inizio Stile Header */
+.navbar-default {
+  border-color: #5e2129;
+}
 .navbar {
   margin-bottom: 0;
   background-color: #5e2129;
@@ -36,6 +39,11 @@ html {
 }
 .navbar .navbar-nav {
   border-right: 1px solid white;
+}
+@media (min-width: 767px) {
+  .navbar .navbar-nav {
+    border-right: 1px solid white;
+  }
 }
 .navbar .navbar-nav li > a:hover {
   color: #bbbaba;
@@ -48,8 +56,10 @@ html {
   color: white;
   background-color: #7a4448;
 }
-.navbar .navbar-nav li {
-  border-left: 1px solid white;
+@media (min-width: 767px) {
+  .navbar .navbar-nav li {
+    border-left: 1px solid white;
+  }
 }
 .navbar .navbar-nav li a {
   color: white;

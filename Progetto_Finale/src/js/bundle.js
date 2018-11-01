@@ -12777,9 +12777,20 @@ $( document ).ready(function() {
 function secActive() {
   $('#filterType button').on('click', function(){
     $('#filterType button').removeClass('active');
-    $('.row-vini article').hide(); // devo nascondere tutti i vini
+    $('.row-vini article').fadeOut(); // nasconde tutti i vini
     $(this).addClass('active');
-
+    var gruppo = $(this).attr('data-group');
+    if(gruppo === 'all'){
+      $('.row-vini article').fadeIn();
+    }
+    else{
+      var matching = $('.row-vini article').filter(function(){
+                     return $(this).attr('data-group') == gruppo;
+                  });
+      matching.fadeIn();
+    }
+  //  var gruppo = $(this).attr('data-group');
+  //  console.log($("button[data-group="+gruppo+"]"));
   });
 }
 

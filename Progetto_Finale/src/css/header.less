@@ -1,6 +1,10 @@
 /*Inizio Stile Header */
 @import "variable.less";
 
+.navbar-default {
+  border-color: @background-color;
+}
+
 .navbar {
   margin-bottom: 0;
   background-color: @background-color;
@@ -14,6 +18,10 @@
   }
 
   .navbar-nav {
+    @media(min-width: 767px){
+      border-right: 1px solid white;
+    }
+
     border-right: 1px solid white;
 
      li > a:hover {
@@ -31,7 +39,9 @@
     }
 
      li{
-      border-left: 1px solid white;
+       @media(min-width: 767px){
+        border-left: 1px solid white;
+      }
 
       a{
           color: white;
