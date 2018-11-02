@@ -66,6 +66,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-serve');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.task.registerTask('develop', ['less','browserify','watch']);
-  grunt.task.registerTask('build', ['cssmin','babel','uglify','serve']);
+  grunt.task.registerTask('build', ['cssmin','babel','uglify']);
 
 };

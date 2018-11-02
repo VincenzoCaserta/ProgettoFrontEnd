@@ -1,0 +1,45 @@
+{
+"vini": [{
+"group": "rosso",
+"image": "image/taurasi-rosso.png",
+"title": "Taurasi",
+"text": "Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante."
+
+},
+{
+  "group": "bianco",
+"image": "image/Bechar-bianco.png",
+"title": "Bechar",
+"text": "Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante."
+
+},
+{
+  "group": "rosso",
+"image": "image/Tauri-rosso.png",
+"title": "Tauri",
+"text": "Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante."
+
+},
+{
+  "group": "rosso",
+"image": "image/salae.domini-rosso.png",
+"title": "Salae Domini",
+"text": "Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante."
+
+},
+{
+  "group": "rosato",
+"image": "image/Mel-rosato.png",
+"title": "Mel",
+"text": "Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante."
+
+},
+{
+  "group": "bianco",
+"image": "image/Fiagre-bianco.png",
+"title": "Fiagre",
+"text": "Un vino rosso rubino intenso, con un profumo ampio, complesso e intenso, di sapore avvolgente ed elegante."
+
+}
+]
+}

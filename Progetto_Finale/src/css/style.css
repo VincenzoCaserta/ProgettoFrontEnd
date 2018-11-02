@@ -142,9 +142,11 @@ body {
 }
 /* Inizio Stile Footer */
 footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  margin-top: 5em;
   background-color: #5e2129;
-  margin-top: 4%;
-  margin-bottom: 0;
   text-align: center;
 }
 footer ul.nav.nav-pills {
