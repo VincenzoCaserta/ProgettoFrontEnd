@@ -38,11 +38,11 @@
     </header>
 
     <!-- Cookie -->
-    <div class="cookie" data-visible=true>
+    <div class="cookie">
       Questo sito utilizza i cookie per migliorare servizi
       ed esperienza degli utenti. Continuando la navigazione nel sito acconsenti al loro uso.
       <a href="www.google.it" target="_blank"> Maggiori informazioni</a><br>
-      <button id="b-cookie" class="btn btn-warning">Chiudi</button>
+    <!--  <button id="b-cookie" class="btn btn-warning">Chiudi</button> -->
     </div>
 
 
@@ -114,18 +114,80 @@
   <footer>
     <hr>
     <ul class="nav nav-pills">
-      <li role="presentation"><a href="#">Contatti</a></li>
-      <li role="presentation"><a href="#">Termini di utilizzo</a></li>
-      <li role="presentation"><a href="#">Informativa sulla Privacy</a></li>
+      <li role="presentation"><a href="#" data-toggle="modal" data-target="#exampleModal1">Contatti</a></li>
+      <li role="presentation"><a href="#" data-toggle="modal" data-target="#exampleModal2">Termini di utilizzo</a></li>
+      <li role="presentation"><a href="#" data-toggle="modal" data-target="#exampleModal3">Informativa sulla Privacy</a></li>
       <li role="presentation"><a href="#">P. IVA</a></li>
     </ul>
   </footer>
 
-  <!-- Footer -->
-  <!--<footer>
-    <hr>
-    <span>Cantine Guastaferro &copy 2010</span>
-  </footer>-->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contatti</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Indirizzo: Via Gramsci, Taurasi(AV)</li>
+            <li>Telefono: +39 3280041984</li>
+            <li>Fax: 082775342</li>
+            <li>Email: cantine.guastaferro@gmail.com</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Termini di utilizzo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Attraverso l’accesso e la navigazione all’interno del Sito, l’utente  dichiara di aver visionato e di accettare, senza limitazione o riserva alcuna, le presenti Condizioni Generali
+           di utilizzo e/o qualsiasi altra nota, avviso legale, informativa o disclaimer ovunque pubblicati nel Sito.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Informativa sulla privacy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Codice privacy: l’articolo 13 del GDPR 2016/679 impone al titolare dei dati personali di informare l’interessato su
+           fini e modalità del trattamento e stabilisce gli elementi che devono essere comunicati al cliente\utente.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="dist/js/bundle.min.js"></script>
 </body>
 

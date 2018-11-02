@@ -1,26 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  overflow-x: hidden;
   background-color: beige;
-}
-html {
-  font-size: 2rem;
-}
-@media -breakpoint-up (sm) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-@media -breakpoint-up (md) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-@media -breakpoint-up (lg) {
-  html {
-    font-size: 1.8rem;
-  }
 }
 /*Inizio Stile Header */
 .navbar-default {

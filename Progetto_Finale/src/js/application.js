@@ -3,15 +3,9 @@ require('bootstrap');
 
 $( document ).ready(function() {
 
-  console.log($('.cookie').attr('data-visible'));
-  if(!$('.cookie').attr('data-visible')){
-    console.log('nell if');
-    $('.cookie').hide();
-  }
+  $('.cookie').cookieBar();
 
   secActive();
-
-  hideCookie();
 
   playCarousel();
 
@@ -32,14 +26,6 @@ function secActive() {
       });
       matching.fadeIn();
     }
-  });
-}
-
-function hideCookie(){
-  $('#b-cookie').on('click', () => {
-    $('.cookie').attr('data-visible', false);
-    console.log($('.cookie'));
-    $('.cookie').fadeOut();
   });
 }
 
